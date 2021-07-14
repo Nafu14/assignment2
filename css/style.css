@@ -1,0 +1,252 @@
+/* imorting font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* importing font */
+
+/* common css start */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+ol,ul{
+    list-style-type: none;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #fff;
+}
+h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+}
+h3{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+.container{
+    width: 72.5rem;
+}
+.commonBtn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 15px;
+    background: #E02C6D;
+    color: #fff;
+    transition: all linear .3s;
+}
+.commonBtn i{
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+}
+.commonBtn:hover i{
+    opacity: 1;
+    visibility: visible;
+
+}
+.commonBtn:hover{
+    padding: 8px 25px;
+    box-shadow: 0 0 10px #ff005d;
+}
+/* common css end */
+
+/* header css start */
+#header{
+    background: #2D25A0;
+    display: flex;
+    justify-content: center;
+}
+.headerContainer{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center;
+    grid-gap: 50px;
+    padding: 50px 0;
+}
+.headerContent{
+    padding: 0 20px;
+}
+.headerContent h1{
+    margin-bottom: 50px;
+}
+.headerImage img{
+    width: 550px;
+    height: 435px;
+    transition: all linear .3s;
+}
+.headerImage img:hover{
+    transform: scale(1.1) translate(-5%);
+}
+/* header css end */
+
+/* player part css start */
+
+#playerPart{
+    padding-top: 4.3rem ;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+}
+.playerContainer{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 50px;
+}
+.player{
+    box-shadow: 0 0 10px #6C6C6C;
+    padding: 15px 10px;
+    border-radius: 10px;
+    transition: all linear .3s;
+}
+.player:hover{
+    background-color: #0A0826;
+    
+    box-shadow: 0 0 10px #ff005d;
+}
+.player:hover h3,
+.player:hover p{
+    color: #fff;
+}
+.playerImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.playerImage{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0;
+    bottom: 5px;
+    border-radius: 10px;
+    background: rgba(22, 55, 82, 0.6);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay a{
+    color: #fff;
+}
+.playerInfo h3{
+    margin:  10px 0;
+}
+/* player part css end */
+
+/* highlight part css start */
+
+#highlight{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#highlight::after{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background: #2D25A0;
+    top: 100px;
+    left: -300px;
+    z-index: -1;
+}
+.highlightContainer{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center;
+    grid-gap: 50px;
+    padding: 50px 0;
+}
+.highlightContent{
+    padding-right: 50px;
+}
+.highlightContent h2{
+    color: #a7a1f5;
+}
+.highlightContent p{
+    margin: 20px 0 50px 0;
+}
+.highlightContent .commonBtn{
+    margin: 20px 0;
+}
+
+/* highlight part css end */
+
+/* footer part css start */
+
+#footer{
+    padding: 50px 0;
+}
+
+.footerLogo img{
+    width: 465px;
+    height: 110px;
+}
+.footerJustify{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(10%);
+}
+.footerIcon{
+    padding: 20px 0;
+}
+.footerIcon i{
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #ddd8d8;
+    color: #6C6C6C;
+    transition: all linear .3;
+}
+.footerIcon i:hover{
+    background-color: #6C6C6C;
+    color: #fff;
+}
+
+#footer p{
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+/* footer part end */
+
+
+
+
+
+
+
+
+/* media query part star */
